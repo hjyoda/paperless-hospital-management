@@ -1,0 +1,44 @@
+<div *ngIf="check; else logout">
+  <!-- Content to be displayed when check is true (e.g., Patient content) -->
+  <h1>Welcome, Patient!</h1>
+  <!-- Add more patient-specific content here -->
+</div>
+
+<!-- <ng-template #logout>
+  Content to be displayed when check is false (e.g., Logout content) -->
+  <!-- <button (click)="logout()">Logout</button>
+</ng-template> -->
+
+<header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <button class="register-button">
+          <a routerLink="Register" routerLinkActive="active">Register Patient</a></button>
+      </div>
+      <div class="navbar-right">
+        <button class="logout-button">Logout</button>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="home">
+    <div class="hospital-description">
+      <h1>Welcome to Our Hospital</h1>
+      <p></p>
+    </div>
+    
+  </main>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="contact-us">
+        <h3>Contact Us</h3>
+        <p>Phone: +1 (123) 456-7890</p>
+        <!-- Additional contact information can be included here -->
+      </div>
+      <div class="logo">
+      </div>
+      
+    </div>
+  </footer>
+  

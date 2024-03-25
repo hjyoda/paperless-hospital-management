@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(hospital.jpg); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container::before {
+  content: "";
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('hospital3.avif'); /* Add your background image */
+  background-size: cover;
+  opacity: 0.5; /* Adjust opacity as needed */
+  z-index: -1; /* Position the background image behind the container */
+  border-radius: 20px; /* Match container border-radius */
+}
+
+.container {
+  backdrop-filter:inherit;
+  background-position: 0%;
+  font-style: italic;
+  font-display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(228, 238, 247, 0.598); /* Semi-transparent background */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(2, 12, 122, 0.2); /* Box shadow for a subtle depth effect */
+  transition: transform 0.3s ease;
+}
+
+/* .container:hover {
+  background-color:aliceblue;
+  transform: translateY(-5px); /* Add a slight upward translation on hover 
+} */
+
+h2 {
+  background-color: #d4edda;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #809ab7;
+  color: #fff;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+h2:hover {
+  background-color: #82b1e3; /* Change background color on hover */
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  
+  font-weight: bold;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+textarea {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+select:hover,
+input[type="text"]:hover,
+input[type="number"]:hover,
+textarea:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+select {
+  height: 38px;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 20px;
+  background-color: #4385cc;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}

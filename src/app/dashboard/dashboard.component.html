@@ -1,0 +1,58 @@
+<div class="container">
+  <h2>Register New Patient</h2>
+  <form [formGroup]="claimForm" (ngSubmit)="submitClaim()">
+    
+    <div class="form-group">
+      <label for="patientName">Full Name</label>
+      <input type="text" formControlName="patientName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="patientAge">Age</label>
+      <input type="text" formControlName="patientAge" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="genderType">Gender</label>
+      <select formControlName="genderType" class="form-control">
+        <option value="">Select Gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="patientBloodGroup">Blood Group</label>
+      <select formControlName="patientBloodGroup" class="form-control">
+        <option value="">Select your blood group</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O+</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label>
+      <input type="number" formControlName="phoneNumber" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="addressDetails">Permanent Address</label>
+      <textarea formControlName="addressDetails" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="diseaseDetails">Heridetary Diseases (if any)</label>
+      <textarea formControlName="diseaseDetails" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="allergyDetails">Allergies (if any)</label>
+      <textarea formControlName="allergyDetails" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Details</button>
+    <div *ngIf="claimSubmitted" class="confirmation-message">
+      Thank You! 
+      Patient Registered!
+    </div>
+  </form>
+</div>
